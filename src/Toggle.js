@@ -4,16 +4,12 @@ class Toggle extends React.Component {
   constructor(props) {
     super(props);
     this.state = {isToggleOn: true};
-  }
-
-  handleClick = () => {
-    console.log('this is :', this);  
-  }
-
-  handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
+    this.handleClick =  () => {
+      console.log("Inside HandleClick");
+      this.setState(state => ({
+        isToggleOn: !state.isToggleOn
+      }));
+    }
   }
 
   render() {

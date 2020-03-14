@@ -18,6 +18,7 @@ function App() {
         <Welcome name={user.firstname}/>
         <Clock/>
         <Mailbox unreadMessages={messages} />
+        <Toggle/>
         <p>
           Built by {user.firstname + ' ' + user.lastname}!
         </p>
